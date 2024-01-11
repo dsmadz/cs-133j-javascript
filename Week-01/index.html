@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+		Author: Douglas Madzier
+		Date:   Monday, November 27, 2023
+    Class:  CS-125H - Lab 09
+	-->
+
+  <title>Family Recipes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/hands-on/css/style.css" />
+  <link rel="stylesheet" href="/hands-on/css/normalize.css" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+</head>
+
+<body>
+  <header class="main-header">
+    <h1>Madzier Family Recipes</h1>
+    <nav class="nav main-nav">
+      <ul>
+        <li><a href="index.html" id="active">Home</a></li>
+        <li><a href="breakfast/breakfast.html">Breakfast</a></li>
+        <li><a href="lunch/lunch.html">Lunch</a></li>
+        <li><a href="dinner/dinner.html">Dinner</a></li>
+        <li><a href="dessert/dessert.html">Dessert</a></li>
+        <li><a href="contact/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="title-h2">Welcome</h2>
+    <p>
+      This is a family website with recipes we have collected over the years. Some of these recipes are from my grandmother (1913-2010), some are from my
+      mother and others are from cookbooks. Some recipes are even from the early days of the web and were printed on a dot-matrix printer.
+    </p>
+    <p>I made this site so family members from afar will always be able to find those missing holiday favorites or see what my family has been making.</p>
+  </main>
+  <section>
+    <h2 class="title-h2">Recipes</h2>
+  </section>
+
+  <section class="flex-recipe-container">
+    <div class="flex-recipe-item">
+      <a class="recipe-href" href="dinner/shotgun-willie-chili.html">
+        <h2 class="flex-recipe-title">Shotgun Willie Chili</h2>
+      </a>
+      <a href="dinner/shotgun-willie-chili.html"><img src="images/shotgun-willie-chili-500.png" alt="Image of beef chili." class="flex-recipe-image" /></a>
+      <p class="flex-recipe-text">My favorite beef chili. The dried peppers make all the difference.</p>
+    </div>
+    <div class="flex-recipe-item">
+      <a class="recipe-href" href="dinner/chili-verde.html">
+        <h2 class="flex-recipe-title">Pork Chili Verde</h2>
+      </a>
+      <a href="dinner/chili-verde.html"><img src="images/chile-verde-500.png" alt="Image of pork chili verde." class="flex-recipe-image" /></a>
+      <p class="flex-recipe-text">Pork chili verde is one of my favorite recipes for cool weather.</p>
+    </div>
+
+    <div class="flex-recipe-item">
+      <a href="dinner/zuppa-tuscana.html">
+        <h2 class="flex-recipe-title">Zuppa Tuscana</h2>
+      </a>
+      <a href="dinner/zuppa-tuscana.html"><img src="images/zuppa-tuscana-500.png" alt="Image of zuppa tuscana." class="flex-recipe-image" /></a>
+      <p class="flex-recipe-text">This is our favorite clone recipe of Olive Garden's Zuppa Tuscana.</p>
+    </div>
+
+    <div class="flex-recipe-item">
+      <a href="dinner/cabbage-rolls.html">
+        <h2 class="flex-recipe-title">Stuffed Cabbage Rolls</h2>
+      </a>
+      <a href="dinner/cabbage-rolls.html"><img src="images/Golumpki-500.png" alt="Image of pork stuffed cabbage." class="flex-recipe-image" /></a>
+      <p class="flex-recipe-text">This is a delicious recipe from the Polish region.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="copyright"><span>
+        &copy; Copyright 2023, dsmadz
+      </span></div>
+  </footer>
+</body>
+
+</html>

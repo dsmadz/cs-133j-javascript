@@ -1,0 +1,347 @@
+/*
+Author: Douglas Madzier
+Date:   Monday, November 27, 2023
+Class:  CS-125H - Lab 09
+New media queries at bottom of page.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Special+Elite&display=swap');
+
+/*Reset*/
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+html,
+body {
+  margin: auto auto 2px auto;
+  padding: 0;
+  max-width: 1440px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url('../images/header-image.png');
+  background-blend-mode: multiply;
+  background-size: cover;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.main-header h1 {
+  font-variant: small-caps;
+  font-size: 4em;
+  text-align: center;
+  color: rgb(240, 240, 210);
+  margin: 0;
+  padding: 0.5em;
+}
+
+.nav ul {
+  padding: 0;
+  font-size: 1.5em;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  display: inline-block;
+  color: rgb(240, 240, 210);
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+.main-nav {
+  text-align: center;
+}
+
+#active {
+  background-color: rgba(240, 240, 210, 0.3);
+}
+
+a:focus,
+a:hover {
+  background-color: rgba(240, 240, 210, 0.5);
+}
+
+.recipe-image-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  padding: 1.5em;
+}
+main p {
+  font-size: 1.15em;
+}
+
+section {
+  padding: 0 5em;
+}
+
+.title-h2 {
+  font-variant: small-caps;
+  font-size: 2.5em;
+  text-align: center;
+  color: #283618;
+  margin: 0;
+  padding: 0.5em;
+}
+
+/* Flex container */
+.flex-recipe-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-recipe-title {
+  text-align: center;
+  color: #283618;
+}
+.flex-recipe-image {
+  max-width: 90%;
+  min-width: 100px;
+  align-items: center;
+}
+.flex-recipe-text {
+  max-width: 90%;
+  margin: auto;
+  padding-bottom: 5px;
+}
+.flex-recipe-item {
+  width: 300px;
+}
+
+.flex-recipe-item a {
+  padding: 0.5em 0;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.flex-recipe-item a:focus,
+.flex-recipe-item a:hover {
+  background-color: rgba(205, 205, 175, 0.833);
+}
+
+.recipe-font h2 {
+  font-family: 'Special Elite', Courier, monospace;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.recipe-font li {
+  font-size: 1.15em;
+  font-family: 'Special Elite', Courier, monospace;
+  padding-bottom: 0.5em;
+}
+
+.step {
+  font-family: 'Special Elite', Courier, monospace;
+  font-size: 1.15em;
+  font-weight: 600;
+}
+
+.recipe-font p {
+  font-family: 'Special Elite', Courier, monospace;
+  font-size: 1.15em;
+  line-height: 1.3;
+}
+
+footer {
+  border: 1px solid black;
+  padding: 5px 5px;
+  text-align: center;
+  height: 3em;
+  background-color: rgb(240, 240, 210);
+  position: relative;
+}
+
+footer span {
+  position: absolute;
+  right: 0.5em;
+  bottom: 0.25em;
+}
+
+section {
+  flex: 1 200px;
+}
+
+/* Nutrition table */
+table {
+  border-collapse: collapse;
+  border: solid 2px black;
+  max-width: 480px;
+}
+thead {
+  background-color: rgb(240, 240, 210);
+}
+tr {
+  border-bottom: 1px solid #000;
+}
+td.right {
+  text-align: right;
+}
+td:nth-child(2) {
+  font-weight: bold;
+}
+.border_bottom_lrg {
+  border-bottom: 8px solid #000;
+}
+tfoot {
+  font-size: small;
+  font-style: italic;
+}
+
+/* Styles for contact form */
+
+.contact-form {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+form {
+  display: inline-block;
+  margin: auto;
+}
+fieldset {
+  width: fit-content;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  padding: 0.5em 1em;
+  background-color: rgb(240, 240, 210);
+}
+legend {
+  color: #283618;
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+input[type='text'],
+input[type='date'],
+input[type='email'],
+input[type='tel'],
+textarea {
+  background-color: #ffffff;
+}
+label {
+  float: left;
+  width: 10em;
+  text-align: right;
+}
+label,
+input {
+  font-size: 1em;
+  color: #283618;
+}
+
+input {
+  width: 15em;
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+}
+textarea {
+  font-size: 1em;
+  width: 15em;
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+input:required,
+textarea:required {
+  border: 2px solid red;
+  color: #800000;
+}
+input:valid,
+textarea:valid {
+  border: 1px solid black;
+  color: #283618;
+}
+input:invalid {
+  box-shadow: none;
+  border: 2px solid red;
+  color: #800000;
+}
+br {
+  clear: both;
+}
+
+@media only screen and (max-width: 700px) {
+  .main-header h1 {
+    font-size: 3em;
+    padding: 0;
+  }
+  .nav ul {
+    font-size: 1.25em;
+  }
+  .title-h2 {
+    font-size: 2em;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .main-header h1 {
+    font-size: 2em;
+    padding: 0;
+  }
+  .nav ul {
+    font-size: 0.85em;
+  }
+  .title-h2 {
+    font-size: 1.5em;
+    padding: 0;
+  }
+  main {
+    padding: 10px;
+  }
+  main p {
+    font-size: 0.85em;
+  }
+  .flex-recipe-title {
+    font-size: 1.25em;
+  }
+  .flex-recipe-text {
+    font-size: 0.85em;
+  }
+  footer {
+    font-size: 0.85em;
+  }
+}
+@media only screen and (max-width: 420px) {
+  main {
+    padding: 5px;
+  }
+  .main-header h1 {
+    font-size: 1.8em;
+    padding: 0;
+  }
+  .nav ul {
+    font-size: 0.75em;
+  }
+  .title-h2 {
+    font-size: 1.15em;
+    padding: 0;
+  }
+  .flex-recipe-title {
+    font-size: 1.15em;
+  }
+  .flex-recipe-text {
+    font-size: 0.75em;
+  }
+  footer {
+    font-size: 0.75em;
+  }
+}
