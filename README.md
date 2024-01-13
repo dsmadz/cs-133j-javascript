@@ -1,5 +1,9 @@
 # CS 133J README.md
 
-## index.html
+## Week-01
 
-## style.css
+### index.html
+This is the index.html file for the github page.
+
+### style.css
+This is the style.css file for the github page.
