@@ -1,0 +1,132 @@
+/*
+Auth:   Douglas Madzier
+Date:   Friday, February 02, 2024
+Class:  CS-133J Week-03 Homework
+*/
+
+/*==== Google Font Import - Poppins ====*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Two color variables */
+:root {
+  --dark-grey: #505050;
+  --blue: #5165ff;
+}
+/* Form reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue);
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header h1 sup {
+  font-size: 0.6em;
+}
+
+header h1,
+h2 {
+  color: #505050;
+}
+
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  margin: 0 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container form {
+  font-size: 1em;
+  position: relative;
+  background-color: #f2f2f2;
+  padding: 20px 30px;
+  border-radius: 10px;
+  min-width: 500px;
+}
+
+.order {
+  color: var(--dark-grey);
+}
+
+.frmImg img {
+  border-radius: 10px;
+  width: 150px;
+}
+
+.container form .formImages {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.container form .fields {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form .fields .input-field {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  /* align-items: center; */
+}
+
+.input-field label {
+  font-size: 0.8em;
+  font-weight: 500;
+  color: var(--dark-grey);
+  margin-bottom: 5px;
+}
+
+.price {
+  font-size: 1em;
+}
+
+.input-field input {
+  font-size: 0.9em;
+  font-weight: 400;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.input-field select {
+  font-size: 0.9em;
+  font-weight: 400;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.total {
+  color: var(--dark-grey);
+  font-size: 1em;
+  position: relative;
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border-radius: 10px;
+  min-width: 500px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+	Auth: 	Douglas Madzier
+	Date: 	Wednesday, January 31, 2024
+	Class: 	CS-133J Week-02 Classwork
+	-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madzier - CS-133J Week-03 Homework</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- Wrapper for page content. -->
+
+    <div class="container">
+        <header>
+            <h1>Fresh Fido<sup>&trade;</sup></h1>
+            <h2>Healthy Pet Food</h2>
+        </header>
+        <br>
+        <hr>
+        <br>
+        <div class="order">
+            <h3>Your Order</h3>
+        </div>
+        <br>
+        <!-- Form element -->
+        <form name="frmOrder" id="frmOrder">
+            <!-- Product information -->
+            <div class="formImages">
+                <div class="frmImg" id="frmImg1">
+                    <h3 class="type">Beef</h3>
+                    <img src="img/beef.png" alt="">
+                    <h3 class="price">$19.99 ea.</h3>
+                </div>
+                <div class="frmImg" id="frmImg2">
+                    <h3 class="type">Chicken</h3><img src="img/chicken.png" alt="">
+                    <h3 class="price">$19.99 ea.</h3>
+                </div>
+                <div class="frmImg" id="frmImg3">
+                    <h3 class="type">Lamb</h3>
+                    <img src="img/lamb.png" alt="">
+                    <h3 class="price">$19.99 ea.</h3>
+                </div>
+            </div>
+            <br>
+            <!-- Form inputs -->
+            <div class="fields">
+                <div class="input-field">
+                    <label for="txtQty1">Quantity:</label>
+                    <input type="number" id="txtQty1" name="txtQty1" placeholder="Qty">
+                </div>
+                <br>
+                <div class="input-field">
+                    <label for="txtQty2">Quantity:</label>
+                    <input type="number" id="txtQty2" name="txtQty2" placeholder="Qty">
+                </div>
+                <br><br>
+                <div class="input-field">
+                    <label for="txtQty3">Quantity:</label>
+                    <input type="number" id="txtQty3" name="txtQty3" placeholder="Qty">
+                </div>
+            </div>
+            <br>
+
+        </form>
+        <br><br>
+        <hr>
+        <br>
+        <h3>Your total</h3>
+        <br>
+        <!-- Form output -->
+        <div class="total">
+            <ul>
+                <li>You have <span id="spnBeef">0</span> Beef, <span id="spnChicken">0</span> Chicken and <span id="spnLamb">0</span> Lamb.</li>
+                <li>You have <span id="spnItemQty">0</span><span id="spnSubtotalEach"></span> total items.</li>
+                <li>Sub-Total: <span id="spnSubTotal"> $0.00</span></li>
+                <li>Tax at 6%: <span id="spnSalesTax"> $0.00</span></li>
+                <li>Your total cost: <span id="spnFinalTotal"> $0.00</span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

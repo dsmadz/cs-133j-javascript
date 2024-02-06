@@ -1,0 +1,50 @@
+1. Variables
+	A. Definition
+	B. Datatypes
+		i. Strongly-typed vs. loosely-typed languages
+	D. Scope
+	E. Practical Code
+		i.  Declaring
+			a. Naming rules
+				1. Identifiers must start with a letter or an underscore _
+				2. Identifiers can only contain numbers, letters, or underscore, or dollar signs
+				3. Idenitifiers cannot be reserved keywords - "words" that JavaScript is already using
+					a. var and let are both already used by JS, so your variables can't be named those things
+					b. function, if, while, etc.
+			b. Naming conventions
+				1. identifiers are in camel case - first letter of the identifier is lower case, as are all the other 
+				   letters EXCEPT for the first letter of each subsequent "word" in the identifier
+				   
+				     ex: variable that stored street address of users --> streetAddress
+					 ex: variable that stored wall height converted to inches --> wallHeightInIn
+				2. short, but meaningful "self-documenting"
+				3. prefixing scheme - always add a short prefix to the start of your identifiers it is much
+				   harder to accidentally give a variable a reserved keyword named
+					a. Some programmers use a data type prefix
+						ex: variables that store strings use an "str" prefix
+						ex: variables that store numerical values use an "num" or "int" or "dec" prefix
+					b. Some programmers use their own "variable" prefix
+						ex: add "my" to the beginning of each variable name
+		ii. Using
+			a. YOU DO NOT RESTATE THE VARIABLE KEYWORD AFTER THE FIRST DECLARATION
+			b. Assigning a variable a new values
+			    variableIdentifier = "string value";
+				variableIdentifier = 8;
+				variableIdentifier = window.document.getElementById("#theId");
+			c. Read a value out of a variable
+				window.alert(variableIdentifier);
+		
+2. Operators
+	A. Math Operators	
+		+ addition
+		- subtraction
+		* multiplication
+		/ division
+		% modulus
+	B. Order of Operations (Precedence)
+	C. Text Operators
+		+ concatentation (combining two text strings into one)
+		i. What to do when JS thinks your number is a string
+			a. When you have a statement that uses the + sign as an operator, JavaScript has to guess whether you want the mathematical operation "add" or the text operation of concatentate
+				1. Multiply the perceived string value by 1
+				2. Use the parseInt (whole numbers) or pareFloat (decimal values) functions to explicitely convert from string to number

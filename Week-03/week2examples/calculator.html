@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CS 133S Week 1 Example 1</title>
+		<meta charset="utf-8">
+		
+		<script src="scripts/week2example1.js"></script>
+		
+		<style>
+			* {
+				font-family: geneva, helvetica, sans-serif;
+			}
+			span {
+				width: 2em;
+				background-color: yellow;
+				border: 1px solid black;
+				padding: 0.5em;
+				margin: 0.5em;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Week 2 Example 1</h1>
+		<h2 id="subhead">JavaScript Variables & Calculations</h2>
+		<hr>
+		<form name="frmCalculator" id="frmCalculator">
+			Addition: <input type="number" id="txtAdd1" name="txtAdd1"
+							 value="0">
+			+
+			<input type="number" id="txtAdd2" name="txtAdd2"
+				   value="0">
+			<input type="button" id="btnAdd" name="btnAdd" value="  =  ">
+			<span id="addAnswer"></span>
+			
+			<br><br>
+			
+			Subtraction: <input type="number" id="txtSub1" name="txtSub1">
+			-
+			<input type="number" id="txtSub2" name="txtSub2">
+			<input type="button" id="btnSub" name="btnSub" value="  =  ">
+			<span id="subAnswer"></span>
+			
+			<br><br>
+			
+			Multiplication: <input type="number" id="txtMul1" name="txtMul1">
+			X
+			<input type="number" id="txtMul2" name="txtMul2">
+			<input type="button" id="btnMul" name="btnMul" value="  =  ">
+			<span id="mulAnswer"></span>
+			
+			<br><br>
+			
+			Division: <input type="number" id="txtDiv1" name="txtDiv1">
+			/
+			<input type="number" id="txtDiv2" name="txtDiv2">
+			<input type="button" id="btnDiv" name="btnDiv" value="  =  ">
+			<span id="divAnswer"></span>
+		</form>
+	</body>
+</html>

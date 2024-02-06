@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Week 2 Example 2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles/primary.css">
+	<script src="scripts/week2example2.js" type="text/javascript">
+	</script>
+</head>
+
+<body>
+	<h1>Akme, Corp<sup>&trade;</sup> Commission Calculator</h1>
+	<hr>
+
+	<p>Enter your weekly salary/sales information below in order
+	   to view your paycheck results.</p>
+	
+	<h2>Your Info</h2>
+	<form>
+		Weekly salary: 
+			<input type="number" id="txtSalary" name="txtSalary" 
+				   step="0.01" min="500" max="2000" placeholder="Enter salary">
+		<br><br>
+		Weekly sales:
+			<input type="number" id="txtSales" name="txtSales" 
+				   step="0.01" min="0" placeholder="Enter sales">
+		<br><br>
+		Commission Rate:
+			<!-- Add a select list of commission rates here -->
+			<select id="selRate" name="selRate">
+				<option value="0">Please select your commission rate</option>
+				<option value="3.5">3.5%</option>
+				<option value="5">5%</option>
+				<option value="7.5">7.5%</option>
+			</select>
+		<br><br>
+		<input type="button" id="btnCalc" name="btnCalc"
+		       value="View Pay Summary">
+		
+	</form>
+	
+	<div id="divPayResults">
+	<h2>Your Paycheck</h2>
+		<ul>
+			<li>Your weekly salary: <span id="spnSalary"></span></li>
+			<li>Your weekly sales: <span id="spnSales"></span></li>
+			<li>Your commission rate: <span id="spnRate"></span>%</li>
+			<li>Your weekly commission: <span id="spnComm"></span></li>
+			<li>Your total compensation: <span id="spnTotal"></span></li>
+		</ul>
+	</div>
+
+	
+</body>
+</html>

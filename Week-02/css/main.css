@@ -1,0 +1,49 @@
+/*
+Auth:   Douglas Madzier
+Class:  CS-133J Week 2
+Date:   Tuesday, January 23, 2024
+*/
+
+figure {
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 500px;
+  margin: auto;
+}
+
+img {
+  border: thin #111111 solid;
+  border-radius: 8%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  max-height: 500px;
+}
+
+figcaption {
+  font: italic sans-serif;
+  padding: 10px;
+  text-align: center;
+}
+h2,
+p {
+  margin: auto;
+  text-align: center;
+}
+
+.form {
+  text-align: center;
+}
+
+input {
+  padding: 0.5em;
+  font-size: 1em;
+  border-radius: 15px;
+  margin: 0 10px;
+  background-color: rgb(208, 219, 239);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-size: 1em;
+}
