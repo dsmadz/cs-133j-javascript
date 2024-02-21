@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<title> Week 5 Sample - Loops</title>	
+		<script src="scripts/week05example01.js"></script>
+		<style>
+			* {
+				font-family: arial, helvetica, sans-serif;
+			}
+			input {
+				background-color: lightyellow;
+				padding: 0.5em;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1> Week 5 Samples - Loops </h1>
+		<hr>
+		<h3>Super Simple Number Guessing Game</h3>
+		<h4>Game Settings</h4>
+		<form id="frmSettings">
+			<label for="txtMin">Minimum value:</label>
+			<input type="number" id="txtMin" name="txtMin">
+			<br><br>
+			<label for="txtMax">Maximum value:</label>
+			<input type="number" id="txtMax" name="txtMax">
+			<br><br>
+			<label for="txtAns">Secret Number:</label>
+			<input type="number" id="txtAns" name="txtAns">
+			<br><br>
+			<input type="button" id="btnSettings" name="btnSettings"
+			       value="Hide settings info">
+		
+		</form>
+		
+		<h4>Let's Play!</h4>
+		<p>Click to play a super fun number guessing game</p>
+		<button id="btnNumberGame">Let's Play a Game!</button>
+		
+		<p id="output"></p>
+	
+	</body>
+</html>

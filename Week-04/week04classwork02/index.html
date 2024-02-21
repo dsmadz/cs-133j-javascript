@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Geometry Calculator</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Geometry Calculator</h1>
+            <h2>More practice with logical structures</h2>
+        </header>
+        <main>
+            <section>
+                <p>Please select your desired shape!</p>
+                <form>
+                    <select id="selShape" name="selShape">
+                        <option>...</option>
+                        <option>circle</option>
+                        <option>rectangle</option>
+                        <option>right triangle</option>
+                    </select>
+                </form>
+            </section>
+            <section id="secMeasurement">
+                <form id="frmMeasurement">
+                    <label for="txtRadius" id="lblRadius">Radius</label>
+                    <input type="number" id="txtRadius" name="txtRadius">
+
+                    <label for="txtWidth" id="lblWidth">Width</label>
+                    <input type="number" id="txtWidth" name="txtWidth">
+
+                    <label for="txtHeight" id="lblHeight">Height</label>
+                    <input type="number" id="txtHeight" name="txtHeight">
+
+                    <label for="txtBase" id="lblBase">Base</label>
+                    <input type="number" id="txtBase" name="txtBase">
+                </form>
+
+                <img src="images/shape.jpg" alt="Choose a shape" id="imgShape"
+                      width="400">
+            </section>
+            <section>
+                <h2>Your Calculated Results:</h2>
+                <p>Area: <span id="spnArea"></span></p>
+                <p>Perimeter: <span id="spnPerimeter"></span></p>
+            </section>
+
+        </main>
+    </body>
+
+</html>

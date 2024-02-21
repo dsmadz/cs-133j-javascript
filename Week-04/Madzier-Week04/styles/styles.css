@@ -1,0 +1,46 @@
+/*
+Auth:   Douglas Madzier
+Date:   Monday, February 19, 2024
+Class:  CS-133J Week 04
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin: 10px;
+}
+
+.btnChoice {
+  margin-top: 5px;
+  padding: 5px 0;
+  width: 10em;
+}
+
+#secBtn {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+#divOutcome,
+#divEnd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+section#secDrink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}

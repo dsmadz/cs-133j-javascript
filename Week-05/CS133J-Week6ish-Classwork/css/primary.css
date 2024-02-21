@@ -1,0 +1,39 @@
+* {
+  font-family: arial, helvetica, sans-serif;
+}
+
+html {
+  background-color: darkslateblue;
+}
+
+body {
+  width: 80%;
+  border-radius: 1em;
+  background-color: white;
+  color: black;
+  margin: 2em auto;
+  padding: 1em;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+main section {
+  width: 30%;
+  background-color: cornflowerblue;
+  margin: 1em;
+  padding: 0.5em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+input[type='button'] {
+  width: 10em;
+}

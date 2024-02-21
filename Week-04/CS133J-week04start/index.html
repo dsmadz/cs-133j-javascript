@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Week 4 Control Structure Examples</title>
+	<script type="text/javascript" src="scripts/week4example1.js">
+	</script>
+	<style>
+		* {
+			font-family: arial, helvetica, sans-serif;
+		}
+
+		html {
+			background-color: aliceblue;
+		}
+
+		body {
+			width: 80%;
+			margin: 2em auto;
+			border-radius: 1em;
+			background-color: white;
+			padding: 2em;
+		}
+
+		img {
+			margin: 1em;
+			border: 2px solid navy;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Week 4 Working with Control Structures</h1>
+	<form>
+		<input type="checkbox" id="chkAgree" value="agree"> I'm ready to learn more about control structures!
+	</form>
+
+	<main>
+		<h2>Pick an Image</h2>
+		<form>
+			Are you a:
+			<input id="radCat" type="radio" name="radAnimal" value="cat" checked="checked">cat person?
+			<input id="radDog" type="radio" name="radAnimal" value="dog">dog person?
+			<input id="radBird" type="radio" name="radAnimal" value="bird">bird person?
+
+			<p> Please enter your age: <input type="number" id="txtAge" name="txtAge"></p>
+			<p id="pAge">Use javascript to create a message.</p>
+		</form>
+		<img id="imgPet" src="images/cat.jpg" alt="You are a cat person! Here is a cute kitty!">
+
+		<p>Use a logical structure to print a message appropriate for the current day of the week</p>
+		<h2 id="dailyMsg">Daily Message</h2>
+		<hr>
+	</main>
+</body>
+
+</html>

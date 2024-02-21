@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    background-color: aqua;
+}
+
+body {
+    width: 80%;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1, h2 {
+    font-family: Play, arial, helvetica, sans-serif;
+}
+
+select {
+    padding: 0.5em;
+    font-size: 110%;
+    font-family: Play, arial, helvetica, sans-serif;
+    margin-bottom: 1em;
+}
+
+input {
+    margin-bottom: 1em;
+}
+
+img {
+    border-radius: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section#secMeasurement {
+    display: flex;
+    justify-content: space-between;
+}
+
+section#secMeasurement form {
+    display:flex;
+    flex-direction: column;
+}
+
+
+

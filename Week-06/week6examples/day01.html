@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Week 3 Function Examples</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="scripts/week6examples.js">
+		</script>
+		<style>
+			* {
+				font-family: arial, helvetica, sans-serif;
+			}
+			html {
+				background-color: aliceblue;
+			}
+			body {
+				background-color: white;
+				width: 80%;
+				padding: 3em;
+				margin: 2em auto;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Week 6-ish Function Examples</h1>
+		<hr>
+		
+		<h2>Commission calculator</h2>
+		<form>
+			Sales: <input type="number" id="txtSales"
+			              name="txtSales" value="100">
+			<br><br>
+			Rate: <select id="selRate" name="selRate">
+				    <option value="0">Choose your rate</option>
+					<option value=".05">5.0%</option>
+					<option value=".10">10.0%</option>
+					<option value=".2">20.0%</option>
+				  </select>
+		    <p id="pCommTotal"></p>
+		</form>
+	</body>
+</html>
