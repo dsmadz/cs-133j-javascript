@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- 
+    * @auth    Douglas Madzier
+    * @date    Tuesday, February 20, 2024
+    * @file    CS-133J Mid-Term
+    -->
+    <title>Douglas Madzier: Midterm</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Douglas Madzier: Midterm</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ticketCalc.js"></script>
 </head>
+
 <body>
-    <main>
-        <h1>Dio Air</h1>
+    <main class="container">
+        <section>
+            <h1 id="titleBranding">Dio Air</h1>
+            <h2>Ticketing information</h2>
+        </section>
+        <hr id="titleLine">
+        <section>
+            <form id="frmTicketing" class="input-field">
+                <label for="selDestination">Choose your destination:</label>
+                <br>
+                <select id="selDestination" name="selDestination">
+                    <option value="dst">------Destination------</option>
+                    <option value="sck">Sacramento CA.-($144.75)</option>
+                    <option value="iah">Houston TX.----($576.75)</option>
+                    <option value="mfr">Medford OR.-----($68.00)</option>
+                    <option value="lax">Los Angeles CA.($240.75)</option>
+                </select>
+                <br>
+                <p id="pTaxInfo"><small>Taxes and fees will apply.</small></p>
+                <br>
+
+                <div id="divTickets" class="input-field">
+                    <label for="txtNumTickets">Number of tickets:</label>
+                    <br>
+                    <input type="number" id="txtNumTickets" name="txtNumTickets" value="1">
+                </div>
+                <br>
+
+                <section id="frmOutput">
+                    <p id="pTicketCost">Ticket cost:</p>
+                    <p id="pTax">Transportation tax:</p>
+                    <p id="pFee">Security fee:</p>
+                    <hr>
+                    <p id="pTotal">Total due:</p>
+                </section>
+                <br>
+            </form>
+        </section>
     </main>
 </body>
+
 </html>
