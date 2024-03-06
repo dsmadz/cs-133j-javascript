@@ -1,0 +1,80 @@
+/** 
+*@auth:   Doug Madzier
+*@date:   Tue, March 05, 2024
+*@class:  cs135i week 07-08
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+// Variables
+@bg-color-body: #527280;
+@bg-color: #e6e6e6;
+@primary-color: #3b5998;
+@secondary-color: #20b2aa;
+@font-family: "Madimi One", sans-serif;
+// Calculated value
+@line-height: 1em + 1em;
+
+body {
+    padding: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: @bg-color-body;
+    font-family: @font-family;
+    line-height: @line-height;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    background-color: @bg-color;
+    padding: 20px 40px;
+    box-shadow: 0 5px 10px 0 #333;
+    .border-radius(20px);
+    // Media query
+    @media screen and (max-width: 800px) {
+        width: 375px;
+        padding: 10px;
+    }
+}
+
+h1,
+h3 {
+    .bordered;
+}
+
+a {
+    color: @secondary-color;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 0;
+    color: @secondary-color;
+    background-color: @primary-color;
+    .border-radius(10px);
+    &:hover{
+        color:@primary-color;
+        background-color: @secondary-color;
+    }
+}
+
+
+// Mixins
+.bordered {
+    text-align: center;
+    width: 80%;
+    border-top: dotted 2px @primary-color;
+    border-bottom: solid 2px @secondary-color;
+}
+
+.border-radius(@radius) {
+    border-radius: @radius;
+}

@@ -1,0 +1,18 @@
+Send the currency exchange rate in the dropdown values.
+Create function with dollar amount and conversion rate as parameters.
+
+Week 08 Object and Arrays
+
+Syntax
+	Const myObjectName = {
+		propertyName1: value1,
+		propertyName1: value1,
+		. . .
+	}
+
+Const flavor1 = {
+	name: “chocolate”,
+	price: 1.99,
+	ingredientList: ["cream","sugar","sweetened cocoa","salt"],
+    alergens: ["milk"]	
+}

@@ -1,0 +1,14 @@
+us	1
+euro	0.922970
+pound	0.790118
+rupee  82.897938	
+
+Yen	1
+euro	0.006123	
+pound	0.005242
+rupee	0.549997
+
+rial	1
+euro	0.000022	
+pound	0.000019	
+rupee	0.001975	

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- 
+        Auth:   Douglas Madzier
+        Date:   Wed, February 28, 2024
+        File:   CS-133J Week 06 Homework
+        -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="js/currencyConverter.js"></script>
+    </head>
+
+    <body>
+        <main class="container">
+            <h2>Currency Converter Function App</h2>
+            <form>
+                <section>
+                    <h3>US Dollar</h3>
+                    &#x24; &nbsp;<input type="number" id="fromAmount1" placeholder="Enter desired Dollar amt." />
+                    <label>Convert to:</label>
+                    <select id="toCountry1">
+                        <option value="0.922970">EUR - Euro</option>
+                        <option value="0.790118">GBP - Pound</option>
+                        <option value="82.897938">INR - Rupee</option>
+                    </select>
+                    <p id="to-amount-1">$0</p>
+                    <button id="btn1" type="button" class="btn">Convert</button>
+                </section>
+                <hr />
+                <section>
+                    <h3>Japanese Yen</h3>
+                    &#xA5; &nbsp;<input type="number" id="fromAmount2" placeholder="Enter desired Yen amt." />
+                    <label>Convert to:</label>
+                    <select id="toCountry2">
+                        <option value="0.006123">EUR - Euro</option>
+                        <option value="0.005242">GBP - Pound</option>
+                        <option value="0.549997">INR - Rupee</option>
+                    </select>
+                    <p id="to-amount-2">$0</p>
+                    <button id="btn2" type="button" class="btn">Convert</button>
+                </section>
+                <hr />
+                <section>
+                    <h3>Iranian Rial</h3>
+                    &#65020; &nbsp;
+                    <input type="number" id="fromAmount3" placeholder="Enter desired Rial amt." />
+                    <label>Convert to:</label>
+                    <select id="toCountry3">
+                        <option value="0.000022">EUR - Euro</option>
+                        <option value="0.000019">GBP - Pound</option>
+                        <option value="0.001975">INR - Rupee</option>
+                    </select>
+                    <p id="to-amount-3">$0</p>
+                    <button id="btn3" type="button" class="btn">Convert</button>
+                </section>
+            </form>
+        </main>
+    </body>
+</html>
