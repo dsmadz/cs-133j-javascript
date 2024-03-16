@@ -1,0 +1,91 @@
+/** 
+*@auth:   Doug Madzier
+*@date:   Tue, March 05, 2024
+*@class:  CS133J Weeks 07-08
+*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5vAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9vAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtvAw.ttf) format('truetype');
+}
+body {
+  padding: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #527280;
+  font-family: Roboto, sans-serif;
+  font-size: 1.2em;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  background-color: #e6e6e6;
+  padding: 20px 40px;
+  box-shadow: 0 5px 10px 0 #333;
+  border-radius: 20px;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: 375px;
+    padding: 10px;
+  }
+}
+h1,
+h3 {
+  margin: 15px 0;
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 10px;
+  border: 0;
+  width: 120px;
+  color: #fff;
+  background-color: #3b5998;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px 0 hsl(0, 0%, 20%);
+}
+.btn:hover {
+  font-weight: 600;
+  color: #3b5998;
+  background-color: #fff;
+  box-shadow: 0 5px 5px 0 #3b5998;
+}

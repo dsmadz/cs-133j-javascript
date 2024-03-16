@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Creating AJAX Apps</title>
+        <link rel="stylesheet" href="css/primary.css">
+    </head>
+    <body>
+        <header>
+            <h1>Creating AJAX Apps</h1>
+            <h2>Working with the NASA APOD API</h2>
+        </header>
+
+        <main>
+            <p>Find a picture from a particular date or date range</p>
+            <form>
+                Picture from: 
+                <input type="date" value="2024-01-01" id="txtDate" name="txtDate">
+                <br><br><br>
+                Get pictures from all the days between:
+                <input type="date" value="2024-01-01" id="txtStartDate" name="txtStartDate">
+                and
+                <input type="date" value="2024-01-31" id="txtEndDate" name="txtEndDate">
+            </form>
+            <div id="divOutput">
+
+            </div>
+        </main>
+        
+        <footer>
+            <h3>Useful Things</h3>
+            <ul>
+                <li>NASA APOD API_Key: bG9XOkgeyehnaw2muTMwv9gX3Ue4o1AQo6VgIfkr</li>
+                <li>NASA APOD API Documentation: 
+                    <a href="https://api.nasa.gov/" target="new">
+                        https://api.nasa.gov/
+                    </a></li>
+            </ul>
+        </footer>
+
+        <script src="js/apod.js"></script>
+    </body>
+</html>

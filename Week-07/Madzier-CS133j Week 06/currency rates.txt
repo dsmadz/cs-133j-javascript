@@ -1,9 +1,9 @@
-us	1
+us	    1
 euro	0.922970
 pound	0.790118
 rupee  82.897938	
 
-Yen	1
+Yen	    1
 euro	0.006123	
 pound	0.005242
 rupee	0.549997
