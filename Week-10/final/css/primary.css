@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lobster&display=swap');
+
+body {
+	text-align:center;
+	font-family:Comfortaa, helvetica, sans-serif;
+	background-color: silver;
+	}
+	
+#main {
+	text-align: left;
+	width: 70%;
+	margin: 2rem auto;
+	background-color:white;
+	padding: 2rem;
+	border-radius: 0.3rem;
+	box-shadow: 7px 7px 10px rgba(0,0,0, 0.3);
+	}
+
+#results {
+	text-align: justify;
+	-moz-column-count: 2;
+	-moz-column-gap: 1.5em;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 1.5em;
+	column-count:2;
+	column-gap: 1.5em;
+
+}
+
+#results span {
+	font-style: italic;
+	font-weight: bold;
+	color: silver;	
+}
+
+div.row {
+  clear:both;
+  padding-top:10px;
+  }
+  
+div.row label {
+  float:left;
+  width:125px;
+  text-align:right;
+  padding-right:5px;  
+}
+
+div.row input {
+  float:left;
+  width:200px;
+  text-align:left;
+} 
+	
+h1, h2 {
+	clear:both;
+	color:navy;
+	border-bottom: solid thin navy;
+	text-align: center;
+	}
+	
+h1 {
+	margin-top: 40px;
+	font-family: lobster, cursive;
+	font-size: 300%;
+}
+
+h2 {
+  color:#fff;
+  background-color: navy;
+  padding:0.5rem;
+  }
+  
+input[type=button] {
+  color:#fff;
+  background-color: navy;
+  margin-left:130px;
+  padding: .25em;
+  }
+  
+input[type=text], select {
+  background-color: #dfdfff;
+  }
+
+		
+legend {
+  padding: .25em;
+  background-color: #dfdfff;
+  border: thin solid #000;
+  }
+  
+p.clear {
+  padding-top:10px;
+  clear:both;
+  }
+  
+fieldset, label {
+	display:block;
+	margin-top: 1em;
+  }
+
+fieldset {
+	background-color:#dfdfdf;
+	padding: 0 0 1em 1em;
+  }
+
+input[type="button"] {
+	margin-top: 1em;
+  }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, intial-scale=1" />
+        <title>CS 133S Final by Douglas Madzier</title>
+
+        <link type="text/css" rel="stylesheet" href="css/primary.css" />
+        <script type="text/javascript" src="scripts/vacation.js"></script>
+    </head>
+
+    <body>
+        <div id="main">
+            <h1>March Madness - Fantasy Island Style</h1>
+            <h2>Brought to you by Fantasy Island Travel, LLC<sup>&reg;</sup></h2>
+            <p>
+                Take a few moments to vote on which of the two fantasy vacations shown below you'd prefer. Each vote enters you in a drawing, sure to be conducted in a fair and random manner, and in no way to award all significant prizes to friends, relatives, and hangers-on of Fantasy Island Travel, LLC
+                <sup>&reg;</sup>
+            </p>
+
+            <form name="surveyForm">
+                <fieldset>
+                    <legend>I would rather vacation in:</legend>
+                    <label>
+                        <input type="radio" name="pollRadio" id="optRadio1" value="" />
+                        <span id="optSpan1">Destination 1</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="pollRadio" id="optRadio2" value="" />
+                        <span id="optSpan2">Destination 2</span>
+                    </label>
+                </fieldset>
+            </form>
+
+            <h2>Your Results...Drumroll Please</h2>
+            <div id="results">
+                <ul>
+                    <li>Athens, Greece <span id="Athens"></span></li>
+                    <li>Madrid, Spain <span id="Madrid"></span></li>
+                    <li>Tokyo, Japan <span id="Tokyo"></span></li>
+                    <li>Honolulu, USA <span id="Honolulu"></span></li>
+                    <li>Sydney, Australia <span id="Sydney"></span></li>
+                    <li>London, England <span id="London"></span></li>
+                    <li>Oslo, Sweden <span id="Oslo"></span></li>
+                    <li>Moscow, Russia <span id="Moscow"></span></li>
+                    <li>Kingston, Antigua <span id="Kingston"></span></li>
+                    <li>Acapulco, Mexico <span id="Acapulco"></span></li>
+                    <li>Brasilia, Brazil <span id="Brasilia"></span></li>
+                    <li>Lima, Peru <span id="Lima"></span></li>
+                    <li>Chicago, USA <span id="Chicago"></span></li>
+                    <li>Toronto, Canada <span id="Toronto"></span></li>
+                    <li>Cairo, Egypt <span id="Cairo"></span></li>
+                    <li>Capetown, South Africa <span id="Capetown"></span></li>
+                </ul>
+            </div>
+
+            <h2 id="entries">Thanks for Playing! You now have <span id="count"></span> drawing entries!</h2>
+        </div>
+    </body>
+</html>
