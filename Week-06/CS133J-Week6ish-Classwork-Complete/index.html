@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Looping Practice</title>
+		<link rel="stylesheet" href="css/primary.css">
+		<script src="scripts/loops.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<h1>CS 133J - Week 5-ish</h1>
+			<h2>Working with Loops</h2>
+		</header>
+		
+		<main>
+			<section id="secPractice1">
+				<p>Create a loop that counts down from 100. The output should look like:<br>
+				100...99...98...97...96...etc</p>
+			</section>
+			
+			<section id="secPractice2">
+				<p>Create a loop that displays the powers to 2 from 2<sup>0</sup> to 2<sup>10</sup>. The output
+				should look like:<br>
+				1...2...4...8...etc.</p>
+			</section>
+			
+			<section id="secPractice3">
+				<p>Create a loop with a nested logical structure that prints out the numbers from 1 to 50.
+				For multiples of five, however, print out the word "splat" instead. Output should look like:<br>
+				1, 2, 3, 4, splat, 6, 7, 8, 9, splat, 11, 12, 13, 14, splat, ...</p>
+			</section>
+			
+			<section id="secPractice4">
+				<p>Create a loop that will start prompting users to enter grocery items once they click the btnList button.
+				   Users will be continually prompted to enter a grocery item until they type the word END at the prompt.
+				   Each grocery item they enter should appear inside the divPractice4Output section - but NOT the word END.
+				   Output should look like:<br>
+				   Apples, bananas, cookies, detergent, ... etc.</p>
+				   <input type="button" id="btnList" name="btnList" value="Make list">
+				   <div id="divPractice4Output"></div>
+			</section>
+			
+			<section id="secPractice5">
+				Use a nested loop to print the following pattern in the divPractice5Output section<br>
+				* <br>
+				* * <br>
+				* * * <br>
+				* * * * <br>
+				* * * * * <br>
+				* * * * * * <br>
+				* * * * * * *<br>
+				<hr>
+				<div id="divPractice5Output"></div>
+			</section>
+			
+		</main>
+		<aside>
+			<h3>Working with Collections</h3>
+			<form>
+				<label for="chkRed"><input type="checkbox" name="chkColors" id="chkRed" value="red"> Red</label>
+				<label for="chkOrange"><input type="checkbox" name="chkColors" id="chkOrange" value="orange"> Orange</label>
+				<label for="chkYellow"><input type="checkbox" name="chkColors" id="chkYellow" value="yellow"> Yellow</label>
+				<label for="chkGreen"><input type="checkbox" name="chkColors" id="chkGreen" value="green"> Green</label>
+				<label for="chkBlue"><input type="checkbox" name="chkColors" id="chkBlue" value="blue"> Blue</label>
+				<label for="chkIndigo"><input type="checkbox" name="chkColors" id="chkIndigo" value="indigo"> Indigo</label>
+				<label for="chkViolet"><input type="checkbox" name="chkColors" id="chkViolet" value="violet"> Violet</label>
+				<input type="button" name="btnColors" id="btnColors" value="Click Me!">
+			</form>
+			
+			<div id="output">
+			</div>
+		</aside>
+	
+	</body>
+</html>
